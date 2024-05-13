@@ -1,0 +1,31 @@
+[workspace]
+resolver = "2"
+members = ["typology", "typology-derive"]
+
+[workspace.package]
+edition = "2021"
+authors = ["Danil Karpenko <limpix31@gmail.com>"]
+license = "MIT OR Apache-2.0"
+rust-version = "1.71"
+description = "Type derivation for foreign use"
+keywords = ["type", "derive", "typeof"]
+repository = "https://github.com/limpix31/typology.git"
+homepage = "https://github.com/limpix31/typology"
+documentation = "https://docs.rs/typology"
+categories = ["rust-patterns"]
+
+[workspace.lints.rust]
+[workspace.lints.clippy]
+pedantic = { level = "warn", priority = -1 }
+cargo = { level = "warn", priority = -1 }
+all = "warn"
+unwrap_used = "deny"
+expect_used = "deny"
+module_name_repetitions = "allow"
+too_many_lines = "allow"
+must_use_candidate = "allow"
+missing_const_for_fn = "allow"
+cargo_common_metadata = "allow"
+multiple_crate_versions = "allow"
+missing_errors_doc = "allow"
+missing_panics_doc = "allow"
